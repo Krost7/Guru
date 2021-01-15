@@ -1,5 +1,6 @@
 import bg from './background.png'
-import slide from './images/techGuruSlide.png'
+import logo from './logo.svg'
+import slide2 from './images/gg.png'
 import route from "react-router-dom"
 import './App.css';
 import './tailwind.min.css'
@@ -19,12 +20,19 @@ function App() {
       </ul>
       </div>
       <div className="flex">
-      <div className="mx-40 flex-1">
-      <h1 className="text-2xl p-12">Guru Tech Conor </h1>
-      <h2 className="text-xl">One-step resource center</h2>
-      <p className="w-60">
-      For you to find anything that you want.For you to find anything that you want.For you to find anything that you want.For you to find anything that you want.For you to find anything that you want</p>
-      </div>
+      	<div className="container m-16 px-32">
+      		<p className="container w-28">
+      			<h1 className="text-xl">Guru Tech Corner</h1>
+      			<p>One-step resource center</p>
+      		</p>
+      		<div className="container w-28 shadow-lg">
+      		<img src={logo} className="w-full h-full"/>
+      		</div>
+      	</div>
+      		
+      	<div className="container mx-16 px-32 border border-gray-600">
+      	<img src={slide2} className="w-full h-full opacity-70"/>
+      	</div>
       </div>
     </div>
 
